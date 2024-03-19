@@ -121,3 +121,48 @@ console.log(copyMembersName)
 
 
 //ESERCIZIO 2
+/*
+Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
+1. Per preparare l’aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
+ES (Marco della Rovere => MARCO DELLA ROVERE);
+2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+*/
+
+const classMember = [
+    {
+        id: 213,
+        nome:'Marco della Rovere',
+        grado: 78
+    },
+    {
+        id: 110,
+        nome:'Paola Cortellessa',
+        grado: 96
+    },
+    {
+        id: 250 ,
+        nome:'Andrea Mantegna',
+        grado: 48 
+    },
+    {
+        id: 145 ,
+        nome:'Gaia Borromini',
+        grado: 74   
+    },
+    {
+        id: 196  ,
+        nome:'Luigi Grimaldello ',
+        grado: 68
+    },
+    {
+        id: 102 ,
+        nome:'Luigi Grimaldello ',
+        grado: 50
+    },
+    {
+        id: 120,
+        nome:'Francesca da Polenta',
+        grado: 84
+    }
+]
