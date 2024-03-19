@@ -167,6 +167,17 @@ const classMember = [
     }
 ]
 
+
+
+//fatto col forMap
+/*
+const upperNameLetters = classMember.map((elemento) => {
+    return elemento.name.toUpperCase();
+})
+
+console.log(upperNameLetters)
+*/
+
 function capitalize(string){
     let newString = string.toUpperCase()
 
