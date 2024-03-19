@@ -84,7 +84,40 @@ const MembersName = [
     'Maneskin'
 ];
 
-for(let i = 0; i < MembersName.length; i++){
-    const singleMember = MembersName[i]
-    //console.log(singleMember);
-}
+//fatto col for
+// const nomeTavolo = 'Tavolo Vip'
+// let nomePartecipante;
+// let postoTavolo = 1;
+
+// for(let i = 0; i < MembersName.length; i++){
+//     nomePartecipante = MembersName[i];
+//     postoTavolo++;
+
+//     const object ={
+//         nomeTavolo: nomeTavolo,
+//         nomeOspite: nomePartecipante,
+//         posto: postoTavolo
+//     }
+//     console.log(object)
+// }
+
+
+//Fatto col map
+const copyMembersName = MembersName.map((el, i) => {
+    return {
+        nameVip: el,
+        tableName: 'Tavolo Vip',
+        sitTable: i+1
+    }
+})
+
+
+console.log(copyMembersName)
+
+
+
+
+
+
+
+//ESERCIZIO 2
