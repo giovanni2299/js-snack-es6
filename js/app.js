@@ -166,6 +166,25 @@ const classMember = [
         grado: 84
     }
 ]
+
+function capitalize(string){
+    let newString = string.toUpperCase()
+
+    return newString;
+}
+
+const upperName = []
+classMember.forEach((el) =>  {
+    const nameUpper = el.nome.toUpperCase()
+    upperName.push(nameUpper)
+})
+
+console.log(upperName)
+
+
 //creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 let sdutentsOver70 = classMember.filter((el) => el.grado > 70)
 console.log(sdutentsOver70);
+//creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+let studentsNiceId = classMember.filter((el) => el.grado > 70 && el.id > 120)
+console.log(studentsNiceId)
