@@ -204,3 +204,15 @@ console.log(sdutentsOver70);
 //creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
 let studentsNiceId = classMember.filter((el) => el.grado > 70 && el.id > 120)
 console.log(studentsNiceId);
+
+/*
+
+SNACK 3
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+*/
+
+//creaiamo un array di bici
+const bikes  [];
