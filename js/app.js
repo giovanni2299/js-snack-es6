@@ -215,4 +215,38 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 */
 
 //creaiamo un array di bici
-const bikes  [];
+const bikes = [
+    {
+        nome: 'Hiland', 
+        peso: 6
+    },
+    {
+        nome:'Galano',
+        peso: 8
+    },
+    {
+        nome: 'Mu',
+        peso: 7
+    },
+    {
+        nome: 'Hiland Racing',
+        peso: 10
+    },
+    {
+        nome: 'Hiland Racing',
+        peso: 9
+    },
+    {
+        nome: 'Graziella',
+        peso: 8
+    }
+];
+
+//trovare quella che pesa di meno 
+const copyBikesPeso = bikes.map((element) => {
+    return{
+        peso: element.peso
+    }
+})
+
+console.log(copyBikesPeso)
