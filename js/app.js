@@ -242,14 +242,32 @@ const bikes = [
     }
 ];
 
-//trovare quella che pesa di meno 
-const copyBikesPeso = bikes.map((element) => {
-    return{
-        peso: element.peso
-    }
-})
 
-console.log(copyBikesPeso)
+let pesoMin;
+let IndexWhitPesoMin;
+for(let i = 0; i < bikes.length; i++){
+    const bike = bikes[i]
+    const { peso } = bike;
+    if(i === 0){
+        pesoMin = peso;
+        IndexWhitPesoMin = 0;
+    }else if(peso < pesoMin){
+        pesoMin = peso;
+        IndexWhitPesoMin = i;
+    }
+}
+
+console.log(bikes[IndexWhitPesoMin]);
+
+
+//trovare quella che pesa di meno 
+// const copyBikesPeso = bikes.map((element) => {
+//     return{
+//         peso: element.peso
+//     }
+// })
+
+// console.log(copyBikesPeso)
 
 
 
@@ -263,6 +281,67 @@ Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli su
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+const soccerTeam = [
+    {
+        nome: 'Napoli',
+        punti: 0,
+        falli: 0
+    },
+    {
+        nome: 'Milan',
+        punti: 0,
+        falli: 0
+    },
+    {
+        nome: 'Inter',
+        punti: 0,
+        falli: 0
+    },
+    {
+        nome: 'Juve',
+        punti: 0,
+        falli: 0
+    },
+    {
+        nome: 'Roma',
+        punti: 0,
+        falli: 0
+    },
+    {
+        nome: 'Lazio',
+        punti: 0,
+        falli: 0
+    },
+    
+]
+
+console.log(soccerTeam)
 
 
+for(let j = 0; j < soccerTeam.length; j++){
+    const singleclub = soccerTeam[j]
+    //creo un generatore di punti random 
+    singleclub.punti = Math.floor(Math.random() * 115);
+    //creo un generatore di falli random
+    singleclub.falli = Math.floor(Math.random() * 200);
+}
+console.log(soccerTeam)
 
+
+// soccerTeam.forEach((el) =>{
+//     const singleTeam = el;
+//     singleTeam.points = randomPonits;
+//     singleTeam.falli = randomFaul;
+//     console.log(el.nome, singleTeam.falli, 'falli')
+// })
+
+
+const newSoccerTeam = soccerTeam.map((club) => {
+    const {nome, falli} = club
+    return{
+        nome,
+        falli: randomFaul
+    }
+})
+
+console.log(newSoccerTeam);
