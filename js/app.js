@@ -325,7 +325,7 @@ for(let j = 0; j < soccerTeam.length; j++){
     //creo un generatore di falli random
     singleclub.falli = Math.floor(Math.random() * 200);
 }
-console.log(soccerTeam)
+// console.log(soccerTeam)
 
 
 // soccerTeam.forEach((el) =>{
@@ -340,7 +340,7 @@ const newSoccerTeam = soccerTeam.map((club) => {
     const {nome, falli} = club
     return{
         nome,
-        falli: randomFaul
+        falli
     }
 })
 
