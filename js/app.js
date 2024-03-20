@@ -170,27 +170,32 @@ const classMember = [
 
 
 //fatto col forMap
-/*
+
 const upperNameLetters = classMember.map((elemento) => {
-    return elemento.name.toUpperCase();
+    return{
+        id: elemento.id,
+        nome: elemento.nome.toUpperCase(),
+        grado: elemento.grado,
+    } 
+        
 })
 
 console.log(upperNameLetters)
-*/
 
-function capitalize(string){
-    let newString = string.toUpperCase()
 
-    return newString;
-}
+// function capitalize(string){
+//     let newString = string.toUpperCase()
 
-const upperName = []
-classMember.forEach((el) =>  {
-    const nameUpper = el.nome.toUpperCase()
-    upperName.push(nameUpper)
-})
+//     return newString;
+// }
 
-console.log(upperName)
+// const upperName = []
+// classMember.forEach((el) =>  {
+//     const nameUpper = el.nome.toUpperCase()
+//     upperName.push(nameUpper)
+// })
+
+// console.log(upperName)
 
 
 //creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
@@ -198,4 +203,4 @@ let sdutentsOver70 = classMember.filter((el) => el.grado > 70)
 console.log(sdutentsOver70);
 //creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
 let studentsNiceId = classMember.filter((el) => el.grado > 70 && el.id > 120)
-console.log(studentsNiceId)
+console.log(studentsNiceId);
